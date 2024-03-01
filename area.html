@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area</title>
+    <script src="areaConverter.js"></script>
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/converter.css">
+</head>
+
+<body onload="attachEventsListeners()">
+    <header class="site-header">
+
+        <p class="site-title">
+            <a href="mainPage.html"><i class="fa-solid fa-house"></i></a>Converter of different units of measurement
+        </p>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="distance.html">Distance</a></li>
+                <li><a href="area.html">Area</a></li>
+                <li><a href="temperature.html">Temperature</a></li>
+                <li><a href="weight.html">Weight</a></li>
+            </ul>
+        </nav>
+
+        </label>
+    </header>
+
+    <main>
+        <h1><i class="fa-solid fa-chart-area"></i> Distance Converter</h1>
+        <div>
+            <label for="inputArea">From:</label>
+            <input type="text" id="inputArea">
+            <select id="inputUnits">
+                <option value="sqm">m&sup2</option>
+                <option value="sqkm">km&sup2</option>
+                <option value="ar">Ares</option>
+                <option value="dc">Decares</option>
+                <option value="he">Hectares</option>
+            </select>
+            
+            <input type="button" id="convert" value="Convert">
+        </div>
+        <div>
+            <label for="outputArea">To:</label>
+            <input type="text" id="outputArea" disabled="disabled">
+            <select id="outputUnits">
+                <option value="sqm">m&sup2</option>
+                <option value="sqkm">km&sup2</option>
+                <option value="ar">Ares</option>
+                <option value="dc">Decares</option>
+                <option value="he">Hectares</option>
+            </select>
+        </div>
+    </main>
+</body>
+
+</html>
