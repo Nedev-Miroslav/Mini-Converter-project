@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight</title>
+    <script src="weightConverter.js"></script>
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/converter.css">
+</head>
+
+<body onload="attachEventsListeners()">
+    <header class="site-header">
+
+        <p class="site-title">
+            <a href="mainPage.html"><i class="fa-solid fa-house"></i></a>Converter of different units of measurement
+        </p>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="distance.html">Distance</a></li>
+                <li><a href="area.html">Area</a></li>
+                <li><a href="temperature.html">Temperature</a></li>
+                <li><a href="weight.html">Weight</a></li>
+            </ul>
+        </nav>
+
+        </label>
+    </header>
+
+    <main>
+        <h1><i class="fa-solid fa-scale-balanced"></i> Weight Converter</h1>
+        <div>
+            <label for="inputWeight">From:</label>
+            <input type="text" id="inputWeight">
+            <select id="inputUnits">
+                <option value="kg">Kilograms</option>
+                <option value="g">Grams</option>
+                <option value="t">Tons</option>
+                <option value="oz">Ounces</option>
+            </select>
+            
+            <input type="button" id="convert" value="Convert">
+        </div>
+        <div>
+            <label for="outputWeight">To:</label>
+            <input type="text" id="outputWeight" disabled="disabled">
+            <select id="outputUnits">
+                <option value="kg">Kilograms</option>
+                <option value="g">Grams</option>
+                <option value="t">Tons</option>
+                <option value="oz">Ounces</option>
+            </select>
+        </div>
+    </main>
+</body>
+</html>
