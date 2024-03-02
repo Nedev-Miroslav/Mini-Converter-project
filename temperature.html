@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature</title>
+    <script src="temperatureConverter.js"></script>
+    <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/converter.css">
+</head>
+
+<body onload="attachEventsListeners()">
+    <header class="site-header">
+
+        <p class="site-title">
+            <a href="mainPage.html"><i class="fa-solid fa-house"></i></a>Converter of different units of measurement
+        </p>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="distance.html">Distance</a></li>
+                <li><a href="area.html">Area</a></li>
+                <li><a href="temperature.html">Temperature</a></li>
+                <li><a href="weight.html">Weight</a></li>
+            </ul>
+        </nav>
+
+        </label>
+    </header>
+
+    <main>
+        <h1><i class="fa-solid fa-temperature-three-quarters"></i> Temperature Converter</h1>
+        <div>
+            <label for="inputTemperature">From:</label>
+            <input type="text" id="inputTemperature">
+            <select id="inputUnits">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+
+            <input type="button" id="convert" value="Convert">
+        </div>
+        <div>
+            <label for="outputTemperature">To:</label>
+            <input type="text" id="outputTemperature" disabled="disabled">
+            <select id="outputUnits">
+                <option value="C">Celsius</option>
+                <option value="F">Fahrenheit</option>
+                <option value="K">Kelvin</option>
+            </select>
+        </div>
+    </main>
+
+</body>
+
+</html>
