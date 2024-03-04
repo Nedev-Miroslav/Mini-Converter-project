@@ -1,0 +1,21 @@
+main h3 {
+    text-indent: 1rem;
+}
+
+main div{
+    padding-left: 2rem;
+}
+
+main ul li {
+    list-style: square;
+    list-style-position: inside;
+    padding-top: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+footer{
+    margin-top: 3rem;
+    color: white;
+    background-color: rgb(99, 110, 114);
+}
