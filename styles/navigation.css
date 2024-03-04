@@ -1,0 +1,36 @@
+.main-nav {
+    display: none;
+}
+
+.main-nav ul {
+    padding: 0;
+}
+
+.main-nav li {
+    display: block;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5em 1em;
+}
+
+#nav-toggle {
+    appearance: none;
+    pointer-events: none;
+}
+
+
+.site-header label {
+    display: none;
+}
+
+.main-nav {
+    display: block;
+}
+
+.main-nav ul {
+    display: flex;
+}
